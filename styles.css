@@ -1,10 +1,16 @@
 h1 {
-    color: blue
+    color: blue;
+    border-bottom: solid black;
+    text-align: center;
+}
+
+body {
+    background-color: #acf1cb;
+    font-family: cursive;
 }
 
 .intro-paragraph {
     font-size: 18px;
-    background-color: rgb(223, 199, 245);
     border: black;
     border-style: double;
     font-family: cursive;
@@ -14,4 +20,29 @@ h1 {
     font-size: 18px;
     color: black;
     font-family: cursive;
+}
+
+#pot {
+    bottom: 15%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+        top: 60%;
+    }
+
+    50% {
+        left: 100%;
+        top: 60%;
+    }
+
+    100% {
+        left: 0;
+        top: 60%;
+    }
 }
